@@ -1,3 +1,3 @@
-module "dev_tools_mymodule" {
+module "dependency-management" {
   source = "./module"
 }
