@@ -1,5 +1,4 @@
-#output "myoutput" {
-#  description = "Description of my output"
-#  value       = "value"
-#  depends_on  = [<some resource>]
-#}
+output "platform_navigator" {
+  description = "Description of my output"
+  value       = local.platform_navigator
+}
