@@ -18,7 +18,7 @@ locals {
   }
   apic = {
     channel = "v2.1-eus"
-    version = ""
+    version = "10.0.3.0-ifix1"
     license = ""
     license_use = ""
   }
