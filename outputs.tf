@@ -12,3 +12,8 @@ output "ace" {
   description = "ACE operator configuration"
   value       = local.ace
 }
+
+output "apic" {
+  description = "API Connect operator configuration"
+  value       = local.apic
+}

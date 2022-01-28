@@ -16,4 +16,10 @@ locals {
     license = ""
     license_use = ""
   }
+  apic = {
+    channel = "v2.1-eus"
+    version = ""
+    license = ""
+    license_use = ""
+  }
 }
