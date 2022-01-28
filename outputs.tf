@@ -7,3 +7,8 @@ output "mq" {
   description = "MQ operator configuration"
   value       = local.mq
 }
+
+output "ace" {
+  description = "ACE operator configuration"
+  value       = local.ace
+}
