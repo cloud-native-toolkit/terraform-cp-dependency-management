@@ -22,4 +22,10 @@ locals {
     license = ""
     license_use = ""
   }
+  eventstreams = {
+    channel = "v2.2-eus"
+    version = "10.2.0-eus"
+    license = ""
+    license_use = ""
+  }
 }
