@@ -10,4 +10,10 @@ locals {
     license = "L-RJON-BUVMQX"
     license_use = "NonProduction"
   }
+  ace = {
+    channel = "v1.1-eus"
+    version = ""
+    license = ""
+    license_use = ""
+  }
 }
