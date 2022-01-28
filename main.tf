@@ -6,7 +6,8 @@ locals {
   }
   mq = {
     channel = "v1.3-eus"
-    version = ""
-    license = ""
+    version = "9.2.0.1-r1-eus"
+    license = "L-RJON-BUVMQX"
+    license_use = "NonProduction"
   }
 }
