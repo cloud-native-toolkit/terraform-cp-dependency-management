@@ -1,3 +1,4 @@
+## As of Feb/4/2022 this module resolve the dependency for CP4i version 2021.4.1
 locals {
   platform_navigator = {
     channel = "v5.2"
