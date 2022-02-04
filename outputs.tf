@@ -17,3 +17,8 @@ output "apic" {
   description = "API Connect operator configuration"
   value       = local.apic
 }
+
+output "eventstreams" {
+  description = "IBM Eventstreams operator configuration"
+  value       = local.eventstreams
+}
