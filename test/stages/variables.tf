@@ -1,21 +1,18 @@
 
-variable cluster_username { 
+# Resource Group Variables
+variable "resource_group_name" {
   type        = string
-  description = "The username for AWS access"
+  description = "Existing resource group where the IKS cluster will be provisioned."
 }
 
-variable "cluster_password" {
+variable "ibmcloud_api_key" {
   type        = string
-  description = "The password for AWS access"
+  description = "The api key for IBM Cloud access"
 }
 
-variable "server_url" {
+variable "region" {
   type        = string
-}
-
-variable "bootstrap_prefix" {
-  type = string
-  default = ""
+  description = "Region for VLANs defined in private_vlan_number and public_vlan_number."
 }
 
 variable "namespace" {
@@ -32,7 +29,6 @@ variable "cluster_name" {
 variable "cluster_type" {
   type        = string
   description = "The type of cluster that should be created (openshift or kubernetes)"
-  default     = "ocp4"
 }
 
 variable "cluster_exists" {
@@ -41,41 +37,14 @@ variable "cluster_exists" {
   default     = "true"
 }
 
-variable "git_token" {
+variable "name_prefix" {
   type        = string
-  description = "Git token"
+  description = "Prefix name that should be used for the cluster and services. If not provided then resource_group_name will be used"
+  default     = ""
 }
 
-variable "git_host" {
-  type        = string
-  default     = "github.com"
+variable "vpc_cluster" {
+  type        = bool
+  description = "Flag indicating that this is a vpc cluster"
+  default     = false
 }
-
-variable "git_type" {
-  default = "github"
-}
-
-variable "git_org" {
-  default = "cloud-native-toolkit-test"
-}
-
-variable "git_repo" {
-  default = "git-module-test"
-}
-
-variable "gitops_namespace" {
-  default = "openshift-gitops"
-}
-
-variable "git_username" {
-}
-
-variable "kubeseal_namespace" {
-  default = "sealed-secrets"
-}
-
-variable "cp_entitlement_key" {
-}
-
-
-
