@@ -1,50 +1,135 @@
 
-# Resource Group Variables
-variable "resource_group_name" {
-  type        = string
-  description = "Existing resource group where the IKS cluster will be provisioned."
+variable "gitops_config" {
+  type        = object({
+    boostrap = object({
+      argocd-config = object({
+        project = string
+        repo = string
+        url = string
+        path = string
+      })
+    })
+    infrastructure = object({
+      argocd-config = object({
+        project = string
+        repo = string
+        url = string
+        path = string
+      })
+      payload = object({
+        repo = string
+        url = string
+        path = string
+      })
+    })
+    services = object({
+      argocd-config = object({
+        project = string
+        repo = string
+        url = string
+        path = string
+      })
+      payload = object({
+        repo = string
+        url = string
+        path = string
+      })
+    })
+    applications = object({
+      argocd-config = object({
+        project = string
+        repo = string
+        url = string
+        path = string
+      })
+      payload = object({
+        repo = string
+        url = string
+        path = string
+      })
+    })
+  })
+  description = "Config information regarding the gitops repo structure"
 }
 
-variable "ibmcloud_api_key" {
-  type        = string
-  description = "The api key for IBM Cloud access"
-}
-
-variable "region" {
-  type        = string
-  description = "Region for VLANs defined in private_vlan_number and public_vlan_number."
+variable "git_credentials" {
+  type = list(object({
+    repo = string
+    url = string
+    username = string
+    token = string
+  }))
+  description = "The credentials for the gitops repo(s)"
+  sensitive   = true
 }
 
 variable "namespace" {
   type        = string
-  description = "Namespace for tools"
+  description = "The namespace where the application should be deployed"
 }
 
-variable "cluster_name" {
+variable "kubeseal_cert" {
   type        = string
-  description = "The name of the cluster"
+  description = "The certificate/public key used to encrypt the sealed secrets"
   default     = ""
 }
 
-variable "cluster_type" {
+variable "server_name" {
   type        = string
-  description = "The type of cluster that should be created (openshift or kubernetes)"
+  description = "The name of the server"
+  default     = "default"
 }
 
-variable "cluster_exists" {
+variable "entitlement_key" {
   type        = string
-  description = "Flag indicating if the cluster already exists (true or false)"
-  default     = "true"
+  description = "The entitlement key required to access Cloud Pak images"
+  sensitive   = true
 }
 
-variable "name_prefix" {
+#Module Specific extension
+variable "is_ace_dash_required_dedicated_ns" {
+  type = bool
+  description = "If ACE Dashboard instance need to be deployed in dedicated namespace"
+  default = false
+
+  
+}
+variable "ace_dash_instance_namespace" {
+  type = string
+  description = "It is beeter to manage ACE Dashboard instance workload in a dedicated namespace"
+  default = "gitops-cp-ace-dashboard"
+}
+
+variable "ace_version" {
   type        = string
-  description = "Prefix name that should be used for the cluster and services. If not provided then resource_group_name will be used"
+  description = "The version of the ACE Dashboard should be installed"
   default     = ""
 }
 
-variable "vpc_cluster" {
-  type        = bool
-  description = "Flag indicating that this is a vpc cluster"
-  default     = false
+variable "license" {
+  type        = string
+  description = "The license string that should be used for the instance"
+  default     = ""
+}
+
+variable "license_use" {
+  type        = string
+  description = "The possible values are CloudPakForIntegrationNonProduction or CloudPakForIntegrationProductionn"
+  default     = ""
+}
+
+
+#If ACE Dashboad Instance needed to be overridden then use this
+variable "ace_dash_instance_name" {
+  type = string
+  description = "If ACE Dashboard instance name needed to be overridden"
+  default = ""
+  
+}
+#If ACE Dashboad Instance needed to be overridden then use this
+variable "storage_class_name" {
+  type = string
+  description = "RWX Accessmode supported Storageclass is required "
+  default = "portworx-db2-rwo-sc"
+  
 }
