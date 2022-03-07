@@ -4,6 +4,7 @@ locals {
 cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
 
  available_cp4i_version={
+   
     # Default will be the Latest available CP4i Version.
     default={
       platform_navigator = {
@@ -80,28 +81,28 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license = "TBD"
     }
     mq = {
-      channel = "v1.7"
-      version = "9.2.4.0-r1"
-      license = "L-RJON-C7QG3S"
-      license_use = "NonProduction"
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
     }
     ace = {
-      channel = "v3.0"
-      version = "12.0.2.0-r2"
-      license = "L-KSBM-C87FU2"
-      license_use = "CloudPakForIntegrationNonProduction"
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
     }
     apic = {
-      channel = "v2.4"
-      version = "10.0.4.0-ifix1-54"
-      license = "L-RJON-C7BJ42"
-      license_use = "nonproduction"
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
     }
     eventstreams = {
-      channel = "v2.5"
-      version = "10.5.0"
+      channel = "TBD"
+      version = "TBD"
       license = ""
-      license_use = "CloudPakForIntegrationNonProduction"
+      license_use = "TBD"
     }
 
   }
