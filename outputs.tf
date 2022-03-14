@@ -32,3 +32,8 @@ output "operations_dashboard" {
   description = "IBM Eventstreams operator configuration"
   value       = local.available_cp4i_version[local.cp4i_version].operations_dashboard
 }
+
+output "aspera" {
+  description = "IBM Aspera HSTS operator configuration"
+  value       = local.available_cp4i_version[local.cp4i_version].aspera
+}
