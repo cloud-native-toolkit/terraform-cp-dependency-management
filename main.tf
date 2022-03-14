@@ -51,6 +51,20 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license_use = "CloudPakForIntegrationNonProduction"
     }
 
+    aspera = {
+      channel = "v1.1"
+      version = "2021.4.1"
+      license = "CP4I"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
+
+    datapower = {
+      channel = "v1.5"
+      version = "10.0-cd"
+      license = "L-RJON-C5SF54"
+      license_use="nonproduction"
+    }
+
   }
 
     # CP4i Version 2021.4.1
@@ -97,6 +111,20 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       version = "2021.4.1"
       license = "CP4I"
       license_use = "CloudPakForIntegrationNonProduction"
+    }
+
+    aspera = {
+      channel = "v1.1"
+      version = "2021.4.1"
+      license = "CP4I"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
+
+    datapower = {
+      channel = "v1.5"
+      version = "10.0-cd"
+      license = "L-RJON-C5SF54"
+      license_use="nonproduction"
     }
 
 }
@@ -147,6 +175,19 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license_use = "TBD"
     }
 
+    aspera = {
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
+    }
+
+    datapower = {
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
+    }
   }
 
 }
