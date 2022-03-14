@@ -22,3 +22,13 @@ output "eventstreams" {
   description = "IBM Eventstreams operator configuration"
   value       = local.available_cp4i_version[local.cp4i_version].eventstreams
 }
+
+output "asset_repository" {
+  description = "IBM Eventstreams operator configuration"
+  value       = local.available_cp4i_version[local.cp4i_version].asset_repository
+}
+
+output "operations_dashboard" {
+  description = "IBM Eventstreams operator configuration"
+  value       = local.available_cp4i_version[local.cp4i_version].operations_dashboard
+}
