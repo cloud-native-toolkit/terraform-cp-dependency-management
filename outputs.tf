@@ -22,3 +22,13 @@ output "eventstreams" {
   description = "IBM Eventstreams operator configuration"
   value       = local.available_cp4i_version[local.cp4i_version].eventstreams
 }
+
+output "aspera" {
+  description = "IBM Aspera HSTS operator configuration"
+  value       = local.available_cp4i_version[local.cp4i_version].aspera
+}
+
+output "datapower" {
+  description = "IBM DataPower operator configuration"
+  value       = local.available_cp4i_version[local.cp4i_version].datapower
+}
