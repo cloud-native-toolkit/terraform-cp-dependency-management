@@ -36,6 +36,20 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license = ""
       license_use = "CloudPakForIntegrationNonProduction"
     }
+    
+    asset_repository = {
+      channel = "v1.4"
+      version = "2021.4.1"
+      license = "L-PNAA-C68928"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
+    
+    operations_dashboard = {
+      channel = "v2.5"
+      version = "2021.4.1"
+      license = "CP4I"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
 
   }
 
@@ -70,6 +84,20 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license = ""
       license_use = "CloudPakForIntegrationNonProduction"
     }
+    
+    asset_repository = {
+      channel = "v1.4"
+      version = "2021.4.1"
+      license = "L-PNAA-C68928"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
+    
+    operations_dashboard = {
+      channel = "v2.5"
+      version = "2021.4.1"
+      license = "CP4I"
+      license_use = "CloudPakForIntegrationNonProduction"
+    }
 
 }
 
@@ -102,6 +130,20 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       channel = "TBD"
       version = "TBD"
       license = ""
+      license_use = "TBD"
+    }
+   
+    asset_repository = {
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
+      license_use = "TBD"
+    }
+    
+    operations_dashboard = {
+      channel = "TBD"
+      version = "TBD"
+      license = "TBD"
       license_use = "TBD"
     }
 
