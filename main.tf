@@ -25,8 +25,8 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
       license_use = "CloudPakForIntegrationNonProduction"
     }
     apic = {
-      channel = "v2.5"
-      version = "10.0.4.0-ifix3"
+      channel = "v2.4"
+      version = "10.0.4.0-ifix1-54"
       license = "L-RJON-C7BJ42"
       license_use = "nonproduction"
     }
