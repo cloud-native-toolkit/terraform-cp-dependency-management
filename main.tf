@@ -61,7 +61,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
     datapower = {
       channel = "v1.5"
       version = "10.0-cd"
-      license = "L-RJON-C5SF54"
+      license = "L-RJON-CCCP46"
       license_use="nonproduction"
     }
 
@@ -123,7 +123,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
     datapower = {
       channel = "v1.5"
       version = "10.0-cd"
-      license = "L-RJON-C5SF54"
+      license = "L-RJON-CCCP46"
       license_use="nonproduction"
     }
 
