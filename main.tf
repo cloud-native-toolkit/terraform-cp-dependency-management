@@ -10,7 +10,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
 
       platform_navigator = {
       channel = "v6.0"
-      version = "2022.1.1"
+      version = "2022.2.1"
       license = "L-RJON-CD3JKX"
     }
     mq = {
@@ -134,7 +134,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
   cp4i_2022_2_1={
       platform_navigator = {
       channel = "v6.0"
-      version = "2022.1.1"
+      version = "2022.2.1"
       license = "L-RJON-CD3JKX"
     }
     mq = {
