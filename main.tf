@@ -54,7 +54,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
 
     aspera = {
       channel = "v1.5"
-      version = "TBD"
+      version = "4.4.0"
       license = "TBD"
       license_use = "CloudPakForIntegrationNonProduction"
     }
@@ -116,7 +116,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
 
     aspera = {
       channel = "v1.1"
-      version = "2021.4.1"
+      version = "4.0.0"
       license = "CP4I"
       license_use = "CloudPakForIntegrationNonProduction"
     }
@@ -178,7 +178,7 @@ cp4i_version=var.cp4i_version == ""? "default" : "cp4i_${var.cp4i_version}"
 
     aspera = {
       channel = "v1.5"
-      version = "TBD"
+      version = "4.4.0"
       license = "TBD"
       license_use = "CloudPakForIntegrationNonProduction"
     }
